@@ -1,0 +1,79 @@
+body {
+  font-family: Roboto;
+  margin: 0; /* Removes default browser margin so content hits the screen edge */
+  padding: 0;
+}
+
+.header,
+.shop {
+  background: #1F2937;
+  padding: 20px 50px 0px; /* Top: 20px, Sides: 50px, Bottom: 0px spacing */
+  display: flex; /* Enables Flexbox to align logo and links in a row */
+  justify-content: space-between; /* Pushes logo to the left and links to the right */
+  height: 80px; /* Forces the header to be exactly 80px tall */
+}
+
+.header-name {
+  font-size: 20px;
+  color: #f9faf8;
+  margin: 0; /* Removes default H1 margins to keep it perfectly aligned */
+}
+
+.header-position {
+  list-style-type: none; /* Removes the bullet points from the UL list */
+  display: flex; /* Makes the list items (About, Location, etc.) sit in a row */
+  gap: 16px; /* Sets exactly 16px of space between each link */
+  margin: 0;
+  padding: 0;
+}
+
+.header-appearance {
+  text-decoration: none; /* Removes the default blue underline from the links */
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.shop-holder {
+  display: flex; /* Makes the text box and the image sit side-by-side */
+  justify-content: space-between; 
+  align-items: center; /* Vertically aligns the text and the image in the center */
+  background-color: #1F2937;
+  padding: 40px 50px 80px; /* Defines the size and breathing room of the hero section */
+  gap: 40px; /* Space between the text container and the image */
+}
+
+.shop-layout {
+  display: flex;
+  flex-direction: column; /* Stacks the title, description, and button vertically */
+  gap: 16px; /* Sets 16px of vertical space between the stacked items */
+  max-width: 800px; /* Prevents the description from becoming too wide to read */
+}
+
+.shop-image {
+  width: 400px; /* Sets the specific width for your coffee shop image */
+  height: auto; /* Keeps the image proportions correct so it doesn't look squished */
+}
+
+.shop-name {
+  font-size: 48px;
+  color: #f9faf8; 
+  font-weight: 900; /* Makes the heading extra thick/bold */
+  margin: 0;
+}
+
+.shop-description {
+  color: #e5e7eb;
+  font-size: 18px;
+  margin: 0; 
+}
+
+.action-button {
+  background-color: #3882f6;
+  color: white;
+  border: none; /* Removes the default grey button border */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 24px;
+  cursor: pointer; /* Makes the mouse cursor turn into a hand when pointing */
+  align-self: flex-start; /* Prevents the button from stretching to the full width of the box */
+}
